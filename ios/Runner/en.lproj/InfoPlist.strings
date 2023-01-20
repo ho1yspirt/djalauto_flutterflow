@@ -1,0 +1,2 @@
+NSCalendarsUsageDescription = "In order to use Schedule you need to provide calendar permission";
+PermissionGroupNotification = "In order to use Schedule you need to provide notification permission";
