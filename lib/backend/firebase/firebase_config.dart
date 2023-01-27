@@ -10,8 +10,8 @@ Future initFirebase() async {
             projectId: "djal-auto-be4ed",
             storageBucket: "djal-auto-be4ed.appspot.com",
             messagingSenderId: "947473130835",
-            appId: "1:947473130835:web:5774ea7e110c21e865eda6",
-            measurementId: "G-BVCR8RMWSQ"));
+            appId: "1:947473130835:web:d232bd6a1f22a71265eda6",
+            measurementId: "G-NL7Q13B49V"));
   } else {
     await Firebase.initializeApp();
   }

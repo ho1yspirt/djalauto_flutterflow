@@ -58,6 +58,26 @@ class PapersFirebaseRealtimeDBCall {
       );
 }
 
+class ListdemodemoCall {
+  static Future<ApiCallResponse> call() {
+    return ApiManager.instance.makeApiCall(
+      callName: 'listdemodemo',
+      apiUrl: 'https://efront.devtest.xyz/api/product/list/',
+      callType: ApiCallType.GET,
+      headers: {
+        'Authorization':
+            'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MjE0NzU1LCJpYXQiOjE2NzQyMTI5NTUsImp0aSI6IjBlOGY1OTNiY2Y1ZTQ2YTE5OGRjOTQ1NTM4YTY1MGU4IiwidXNlcl9pZCI6MywiZW1haWwiOiJiQGdtYWlsLmNvbSJ9.NjGXUWTgM1-vSF8CqcJ7NeiYgdMSpfY4KqUPMPJDs3A',
+        'content-type': 'application/json; charset=utf-8',
+      },
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: true,
+      cache: false,
+    );
+  }
+}
+
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

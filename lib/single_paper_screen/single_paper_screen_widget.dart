@@ -1,4 +1,3 @@
-import '../components/appbar_divider_widget.dart';
 import '../components/question_button_widget.dart';
 import '../components/single_question_page_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
@@ -7,6 +6,7 @@ import '../flutter_flow/flutter_flow_timer.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:stop_watch_timer/stop_watch_timer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -82,117 +82,121 @@ class _SinglePaperScreenWidgetState extends State<SinglePaperScreenWidget> {
               style: FlutterFlowTheme.of(context).bodyText1,
             ),
           ),
-          appBar: responsiveVisibility(
-            context: context,
-            desktop: false,
-          )
-              ? PreferredSize(
-                  preferredSize: Size.fromHeight(100),
-                  child: AppBar(
-                    backgroundColor:
-                        FlutterFlowTheme.of(context).primaryBackground,
-                    automaticallyImplyLeading: false,
-                    actions: [],
-                    flexibleSpace: FlexibleSpaceBar(
-                      title: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 14),
-                        child: Column(
+          appBar: PreferredSize(
+            preferredSize: Size.fromHeight(100),
+            child: AppBar(
+              backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+              automaticallyImplyLeading: false,
+              actions: [],
+              flexibleSpace: FlexibleSpaceBar(
+                title: Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 14),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
+                        child: Row(
                           mainAxisSize: MainAxisSize.max,
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
                               padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 8),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        12, 0, 0, 0),
-                                    child: FlutterFlowIconButton(
-                                      borderColor: Colors.transparent,
-                                      borderRadius: 30,
-                                      borderWidth: 1,
-                                      buttonSize: 50,
-                                      icon: Icon(
-                                        Icons.arrow_back_rounded,
-                                        color: Colors.white,
-                                        size: 30,
-                                      ),
-                                      onPressed: () async {
-                                        context.pop();
-                                      },
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        4, 0, 0, 0),
-                                    child: Text(
-                                      FFLocalizations.of(context).getText(
-                                        'iiw1f6ry' /* Back */,
-                                      ),
-                                      style: FlutterFlowTheme.of(context)
-                                          .title2
-                                          .override(
-                                            fontFamily: 'Montserrat',
-                                            color: Colors.white,
-                                            fontSize: 16,
-                                          ),
-                                    ),
-                                  ),
-                                ],
+                                  EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
+                              child: FlutterFlowIconButton(
+                                borderColor: Colors.transparent,
+                                borderRadius: 30,
+                                borderWidth: 1,
+                                buttonSize: 50,
+                                icon: Icon(
+                                  Icons.arrow_back_rounded,
+                                  color: Colors.white,
+                                  size: 30,
+                                ),
+                                onPressed: () async {
+                                  context.pop();
+                                },
                               ),
                             ),
-                            Row(
-                              mainAxisSize: MainAxisSize.max,
-                              children: [
-                                Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
-                                      24, 0, 0, 0),
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      '84vipzch' /* Papers# */,
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(4, 0, 0, 0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'iiw1f6ry' /* Back */,
+                                ),
+                                style: FlutterFlowTheme.of(context)
+                                    .title2
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .title2Family,
+                                      color: Colors.white,
+                                      fontSize: 16,
+                                      useGoogleFonts: GoogleFonts.asMap()
+                                          .containsKey(
+                                              FlutterFlowTheme.of(context)
+                                                  .title2Family),
                                     ),
-                                    textAlign: TextAlign.center,
-                                    style: FlutterFlowTheme.of(context)
-                                        .title2
-                                        .override(
-                                          fontFamily: 'Montserrat',
-                                          color: Colors.white,
-                                          fontSize: 22,
-                                        ),
-                                  ),
-                                ),
-                                Text(
-                                  valueOrDefault<String>(
-                                    getJsonField(
-                                      widget.paperData,
-                                      r'''$.id''',
-                                    ).toString(),
-                                    '[-]',
-                                  ),
-                                  textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .title2
-                                      .override(
-                                        fontFamily: 'Montserrat',
-                                        color: Colors.white,
-                                        fontSize: 22,
-                                      ),
-                                ),
-                              ],
+                              ),
                             ),
                           ],
                         ),
                       ),
-                      centerTitle: true,
-                      expandedTitleScale: 1.0,
-                    ),
-                    elevation: 0,
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
+                            child: Text(
+                              FFLocalizations.of(context).getText(
+                                '84vipzch' /* Papers# */,
+                              ),
+                              textAlign: TextAlign.center,
+                              style:
+                                  FlutterFlowTheme.of(context).title2.override(
+                                        fontFamily: FlutterFlowTheme.of(context)
+                                            .title2Family,
+                                        color: Colors.white,
+                                        fontSize: 22,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey(
+                                                FlutterFlowTheme.of(context)
+                                                    .title2Family),
+                                      ),
+                            ),
+                          ),
+                          Text(
+                            valueOrDefault<String>(
+                              getJsonField(
+                                widget.paperData,
+                                r'''$.id''',
+                              ).toString(),
+                              '[-]',
+                            ),
+                            textAlign: TextAlign.center,
+                            style: FlutterFlowTheme.of(context).title2.override(
+                                  fontFamily:
+                                      FlutterFlowTheme.of(context).title2Family,
+                                  color: Colors.white,
+                                  fontSize: 22,
+                                  useGoogleFonts: GoogleFonts.asMap()
+                                      .containsKey(FlutterFlowTheme.of(context)
+                                          .title2Family),
+                                ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                )
-              : null,
+                ),
+                centerTitle: true,
+                expandedTitleScale: 1.0,
+              ),
+              elevation: 0,
+            ),
+          ),
           body: SafeArea(
             child: GestureDetector(
               onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
@@ -278,7 +282,8 @@ class _SinglePaperScreenWidgetState extends State<SinglePaperScreenWidget> {
                                     );
                                   },
                                   child: QuestionButtonWidget(
-                                    key: UniqueKey(),
+                                    key: Key(
+                                        'questionButton_${questionsIdIndex}'),
                                     paperButtonId: valueOrDefault<String>(
                                       getJsonField(
                                         questionsIdItem,
@@ -295,7 +300,6 @@ class _SinglePaperScreenWidgetState extends State<SinglePaperScreenWidget> {
                       ),
                     ),
                   ),
-                  AppbarDividerWidget(),
                   Expanded(
                     child: Builder(
                       builder: (context) {
@@ -319,7 +323,6 @@ class _SinglePaperScreenWidgetState extends State<SinglePaperScreenWidget> {
                                 final questionSinglePageItem =
                                     questionSinglePage[questionSinglePageIndex];
                                 return SingleQuestionPageWidget(
-                                  key: UniqueKey(),
                                   singleQuestionData: getJsonField(
                                     questionSinglePageItem,
                                     r'''$''',

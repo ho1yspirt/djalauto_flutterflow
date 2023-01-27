@@ -34,7 +34,7 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.googleusercontent.apps.947473130835-kk7l6qj6brqu9r546speu53adb0bl50f</string>
+                <string>com.googleusercontent.apps.947473130835-7p6ijnmn43o5dltpcorajm6ifsjbcgc9</string>
                 
             </array>
         </dict>
@@ -43,10 +43,10 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>djalauto.com</string>
+        <string>djalauto</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>djalauto</string>
+        <string>com.djalauto.djalauto</string>
         </array>
         </dict>
     </array>

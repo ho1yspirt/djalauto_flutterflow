@@ -5,14 +5,15 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class AccountScreenWidget extends StatefulWidget {
-  const AccountScreenWidget({Key? key}) : super(key: key);
+class WebScheduleScreenWidget extends StatefulWidget {
+  const WebScheduleScreenWidget({Key? key}) : super(key: key);
 
   @override
-  _AccountScreenWidgetState createState() => _AccountScreenWidgetState();
+  _WebScheduleScreenWidgetState createState() =>
+      _WebScheduleScreenWidgetState();
 }
 
-class _AccountScreenWidgetState extends State<AccountScreenWidget> {
+class _WebScheduleScreenWidgetState extends State<WebScheduleScreenWidget> {
   final _unfocusNode = FocusNode();
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -34,36 +35,16 @@ class _AccountScreenWidgetState extends State<AccountScreenWidget> {
     context.watch<FFAppState>();
 
     return Title(
-        title: 'Account',
+        title: 'web_schedule_screen',
         color: FlutterFlowTheme.of(context).primaryColor,
         child: Scaffold(
           key: scaffoldKey,
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-          appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-            automaticallyImplyLeading: false,
-            title: Text(
-              FFLocalizations.of(context).getText(
-                'htg3eled' /* Account */,
-              ),
-              style: FlutterFlowTheme.of(context).title2.override(
-                    fontFamily: FlutterFlowTheme.of(context).title2Family,
-                    color: Colors.white,
-                    fontSize: 22,
-                    useGoogleFonts: GoogleFonts.asMap()
-                        .containsKey(FlutterFlowTheme.of(context).title2Family),
-                  ),
-            ),
-            actions: [],
-            centerTitle: true,
-            elevation: 0,
-          ),
           body: SafeArea(
             child: GestureDetector(
               onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [],
               ),
             ),

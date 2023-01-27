@@ -69,60 +69,6 @@ Locale createLocale(String language) => language.contains('_')
     : Locale(language);
 
 final kTranslationsMap = <Map<String, Map<String, String>>>[
-  // schedule_screen
-  {
-    'si02gcny': {
-      'en': 'Schedule',
-      'ky': 'График',
-      'ru': 'Расписание',
-    },
-    'nby1ehs7': {
-      'en': 'Schedule',
-      'ky': 'График',
-      'ru': 'Расписание',
-    },
-  },
-  // papers_screen
-  {
-    'oc9mwrrp': {
-      'en': 'Choose exam paper',
-      'ky': 'Экзамен кагазын тандаңыз',
-      'ru': 'Выбрать экзаменационную работу',
-    },
-    'ynmb8cg7': {
-      'en': 'Category ABM',
-      'ky': 'ABM категориясы',
-      'ru': 'Категория ПРО',
-    },
-    'jq724syr': {
-      'en': 'Page Title',
-      'ky': 'Барактын аталышы',
-      'ru': 'Заголовок страницы',
-    },
-    'o015yp1e': {
-      'en': 'Pass the exam',
-      'ky': 'Экзаменден өт',
-      'ru': 'Сдать экзамен',
-    },
-    'qjpkil86': {
-      'en': 'Papers',
-      'ky': 'Кагаздар',
-      'ru': 'Документы',
-    },
-  },
-  // account_screen
-  {
-    'htg3eled': {
-      'en': 'Account',
-      'ky': 'Каттоо эсеби',
-      'ru': 'Счет',
-    },
-    'syxhxanr': {
-      'en': 'Account',
-      'ky': 'Каттоо эсеби',
-      'ru': 'Счет',
-    },
-  },
   // login_screen
   {
     'piwd2zq7': {
@@ -178,6 +124,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // sms_auth_screen
   {
+    'n5ei50en': {
+      'en': 'SMS Auth',
+      'ky': 'SMS Auth',
+      'ru': 'SMS-авторизация',
+    },
     '7pqlgorn': {
       'en': 'Confirm your Code',
       'ky': 'Кодуңузду ырастаңыз',
@@ -194,15 +145,64 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ky': 'Ырастоо & Улантуу',
       'ru': 'Подтвердить и продолжить',
     },
-    'n5ei50en': {
-      'en': 'SMS Auth',
-      'ky': 'SMS Auth',
-      'ru': 'SMS-авторизация',
-    },
     '1jamw8w0': {
       'en': 'Home',
       'ky': 'Үй',
       'ru': 'Дом',
+    },
+  },
+  // schedule_screen
+  {
+    'si02gcny': {
+      'en': 'Schedule',
+      'ky': 'График',
+      'ru': 'Расписание',
+    },
+    'nby1ehs7': {
+      'en': 'Schedule',
+      'ky': 'График',
+      'ru': 'Расписание',
+    },
+  },
+  // papers_screen
+  {
+    'jq724syr': {
+      'en': 'Page Title',
+      'ky': 'Барактын аталышы',
+      'ru': 'Заголовок страницы',
+    },
+    'o015yp1e': {
+      'en': 'Pass the exam',
+      'ky': 'Экзаменден өт',
+      'ru': 'Сдать экзамен',
+    },
+    'oc9mwrrp': {
+      'en': 'Choose exam paper',
+      'ky': 'Экзамен кагазын тандаңыз',
+      'ru': 'Выбрать экзаменационную работу',
+    },
+    'ynmb8cg7': {
+      'en': 'Category ABM',
+      'ky': 'ABM категориясы',
+      'ru': 'Категория ПРО',
+    },
+    'qjpkil86': {
+      'en': 'Papers',
+      'ky': 'Кагаздар',
+      'ru': 'Документы',
+    },
+  },
+  // account_screen
+  {
+    'htg3eled': {
+      'en': 'Account',
+      'ky': 'Каттоо эсеби',
+      'ru': 'Счет',
+    },
+    'syxhxanr': {
+      'en': 'Account',
+      'ky': 'Каттоо эсеби',
+      'ru': 'Счет',
     },
   },
   // single_paper_screen
@@ -231,6 +231,280 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Home',
       'ky': 'Үй',
       'ru': 'Дом',
+    },
+  },
+  // web_home_screen
+  {
+    'zsdp03nv': {
+      'en': '+996 500 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    'hpqw8ed5': {
+      'en': '+996 557 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    'j2rlf1p3': {
+      'en': 'Mn-St 9:00 am - 8:00 pm',
+      'ky': '',
+      'ru': '',
+    },
+    '62ze0wkc': {
+      'en': 'Login',
+      'ky': '',
+      'ru': '',
+    },
+    's41blwlp': {
+      'en': 'Exam Papers',
+      'ky': '',
+      'ru': '',
+    },
+    '9ecdlvu2': {
+      'en': 'Pass the exam',
+      'ky': '',
+      'ru': '',
+    },
+    'ofud6sv2': {
+      'en': 'Pass the exam',
+      'ky': '',
+      'ru': '',
+    },
+    '1eijth44': {
+      'en': 'Auto school Djal Auto',
+      'ky': '',
+      'ru': '',
+    },
+    'hna0q270': {
+      'en': 'The driving school trains drivers in category B',
+      'ky': '',
+      'ru': '',
+    },
+    '8zj07jc8': {
+      'en': 'Call',
+      'ky': '',
+      'ru': '',
+    },
+    'jg87nku0': {
+      'en': 'Auto school Djal Auto',
+      'ky': '',
+      'ru': '',
+    },
+    'ku0m22yc': {
+      'en': 'Sign up for a driving practice by logging into your account',
+      'ky': '',
+      'ru': '',
+    },
+    'l9jdfzac': {
+      'en': 'Login',
+      'ky': '',
+      'ru': '',
+    },
+    '77mk0w4u': {
+      'en': 'Auto school  Djal Auto',
+      'ky': '',
+      'ru': '',
+    },
+    '9gv02uj6': {
+      'en':
+          'In-depth knowledge and training of future drivers for safe driving',
+      'ky': '',
+      'ru': '',
+    },
+    '4kzithgv': {
+      'en':
+          'Djal Auto Driving School - has teachers with higher education in the field of organization and road safety; These are driving instructors with many years of experience who continue to improve their professional skills in special courses.',
+      'ky': '',
+      'ru': '',
+    },
+    'll8svxp1': {
+      'en': 'Equipped classrooms',
+      'ky': '',
+      'ru': '',
+    },
+    'njsgpc79': {
+      'en':
+          'The classrooms are equipped with teaching aids, computer and video equipment.',
+      'ky': '',
+      'ru': '',
+    },
+    '1fn8zdma': {
+      'en': 'State standard',
+      'ky': '',
+      'ru': '',
+    },
+    'whmq8nhg': {
+      'en':
+          'The classrooms are equipped with teaching aids, computer and video equipment.',
+      'ky': '',
+      'ru': '',
+    },
+    '5ceypaex': {
+      'en': 'Own auto fleet',
+      'ky': '',
+      'ru': '',
+    },
+    '6vimdjsl': {
+      'en': 'Practical driving lessons in cars from the school\'s fleet.',
+      'ky': '',
+      'ru': '',
+    },
+    'zeb22bbx': {
+      'en': 'Education',
+      'ky': '',
+      'ru': '',
+    },
+    'tribeop5': {
+      'en': 'B',
+      'ky': '',
+      'ru': '',
+    },
+    'un989qi6': {
+      'en': 'Information about education:',
+      'ky': '',
+      'ru': '',
+    },
+    'g0bnv290': {
+      'en': '8000 soms',
+      'ky': '',
+      'ru': '',
+    },
+    '5mxybp6f': {
+      'en':
+          '- From 17 years old\n- Training period - 10 weeks\n- Lesson (manual) 300 soms\n- Lesson (auto) 350 soms',
+      'ky': '',
+      'ru': '',
+    },
+    'cj6uopum': {
+      'en': 'Our Teachers',
+      'ky': '',
+      'ru': '',
+    },
+    'kszjzapb': {
+      'en': 'Auto fleet',
+      'ky': '',
+      'ru': '',
+    },
+    'fayn6fk6': {
+      'en': 'Installment education',
+      'ky': '',
+      'ru': '',
+    },
+    'duxuvykt': {
+      'en':
+          'Training guarantee. \nFull accompaniment \nuntil  you get your \ndriver\'s license',
+      'ky': '',
+      'ru': '',
+    },
+    'rlzjsfar': {
+      'en':
+          'We will teach you to feel\n confident behind the wheel. \nTeach you how to drive with \nconfidence',
+      'ky': '',
+      'ru': '',
+    },
+    '4khmy023': {
+      'en': 'Call and sign up',
+      'ky': '',
+      'ru': '',
+    },
+    '42m1qrda': {
+      'en':
+          'Call, discuss all the conditions \nand ask questions about training',
+      'ky': '',
+      'ru': '',
+    },
+    '34xnutbs': {
+      'en': '+996 500 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    '7rteuw5o': {
+      'en': '+996 557 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    '875ahrgi': {
+      'en': 'Call',
+      'ky': '',
+      'ru': '',
+    },
+    'i2xuwfgr': {
+      'en': 'License',
+      'ky': '',
+      'ru': '',
+    },
+    'cpmpqutq': {
+      'en': 'Contact Information',
+      'ky': '',
+      'ru': '',
+    },
+    'pbzebq5a': {
+      'en': 'Bishkek, Nizhny Jal\\nIsy\nAkhunbaeva 200',
+      'ky': '',
+      'ru': '',
+    },
+    'w01jrcim': {
+      'en': '+996 500 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    'qv5gu0u8': {
+      'en': '+996 557 353 541',
+      'ky': '',
+      'ru': '',
+    },
+    '1fma3ahg': {
+      'en': 'Button',
+      'ky': '',
+      'ru': '',
+    },
+    'rzoq03ma': {
+      'en': 'Button',
+      'ky': '',
+      'ru': '',
+    },
+    'ixc47h5t': {
+      'en': 'Button',
+      'ky': '',
+      'ru': '',
+    },
+    '38sk2pwi': {
+      'en': 'Hello World',
+      'ky': '',
+      'ru': '',
+    },
+    '2xum342j': {
+      'en': 'Call',
+      'ky': '',
+      'ru': '',
+    },
+    've7s55cu': {
+      'en': 'Whatsapp',
+      'ky': '',
+      'ru': '',
+    },
+    'n2oor4gm': {
+      'en': 'Instagram',
+      'ky': '',
+      'ru': '',
+    },
+    'p0977xhx': {
+      'en': '© 2023 Джал Авто',
+      'ky': '',
+      'ru': '',
+    },
+    'no5gy9yq': {
+      'en': 'Home',
+      'ky': '',
+      'ru': '',
+    },
+  },
+  // web_schedule_screen
+  {
+    'gjre5ym5': {
+      'en': 'Home',
+      'ky': '',
+      'ru': '',
     },
   },
   // paperBottomSheet
@@ -265,6 +539,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Login',
       'ky': 'Кирүү',
       'ru': 'Авторизоваться',
+    },
+  },
+  // teacherCard
+  {
+    '0v5xuq7u': {
+      'en': 'Profession: ',
+      'ky': '',
+      'ru': '',
+    },
+    '0ri0yqle': {
+      'en': 'Experience:',
+      'ky': '',
+      'ru': '',
+    },
+    'cibkjyeu': {
+      'en': 'Age: ',
+      'ky': '',
+      'ru': '',
     },
   },
   // Miscellaneous

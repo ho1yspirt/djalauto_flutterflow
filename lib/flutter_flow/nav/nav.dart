@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:go_router/go_router.dart';
 import 'package:page_transition/page_transition.dart';
 import '../flutter_flow_theme.dart';
@@ -8,6 +9,8 @@ import '../../backend/backend.dart';
 
 import '../../auth/firebase_user_provider.dart';
 
+import '../../backend/firebase_dynamic_links/firebase_dynamic_links.dart'
+    show DynamicLinksHandler;
 import '../../index.dart';
 import '../../main.dart';
 import '../lat_lng.dart';
@@ -16,6 +19,8 @@ import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
+export '../../backend/firebase_dynamic_links/firebase_dynamic_links.dart'
+    show generateCurrentPageLink;
 
 const kTransitionInfoKey = '__transition_info__';
 
@@ -70,6 +75,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       errorBuilder: (context, _) =>
           appStateNotifier.loggedIn ? NavBarPage() : LoginScreenWidget(),
+      navigatorBuilder: (_, __, child) => DynamicLinksHandler(child: child),
       routes: [
         FFRoute(
           name: '_initialize',
@@ -78,8 +84,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : LoginScreenWidget(),
           routes: [
             FFRoute(
+              name: 'login_screen',
+              path: 'loginScreen',
+              builder: (context, params) => LoginScreenWidget(),
+            ),
+            FFRoute(
+              name: 'sms_auth_screen',
+              path: 'smsAuthScreen',
+              builder: (context, params) => SmsAuthScreenWidget(),
+            ),
+            FFRoute(
               name: 'schedule_screen',
               path: 'scheduleScreen',
+              requireAuth: true,
               builder: (context, params) => params.isEmpty
                   ? NavBarPage(initialPage: 'schedule_screen')
                   : ScheduleScreenWidget(),
@@ -96,28 +113,31 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'account_screen',
               path: 'accountScreen',
+              requireAuth: true,
               builder: (context, params) => params.isEmpty
                   ? NavBarPage(initialPage: 'account_screen')
                   : AccountScreenWidget(),
             ),
             FFRoute(
-              name: 'login_screen',
-              path: 'loginScreen',
-              builder: (context, params) => LoginScreenWidget(),
-            ),
-            FFRoute(
-              name: 'sms_auth_screen',
-              path: 'smsAuthScreen',
-              builder: (context, params) => SmsAuthScreenWidget(),
-            ),
-            FFRoute(
               name: 'single_paper_screen',
               path: 'singlePaperScreen',
+              requireAuth: true,
               builder: (context, params) => SinglePaperScreenWidget(
                 paperData: params.getParam('paperData', ParamType.JSON),
                 currentQuestionIndex:
                     params.getParam('currentQuestionIndex', ParamType.int),
               ),
+            ),
+            FFRoute(
+              name: 'web_home_screen',
+              path: 'webHomeScreen',
+              builder: (context, params) => WebHomeScreenWidget(),
+            ),
+            FFRoute(
+              name: 'web_schedule_screen',
+              path: 'webScheduleScreen',
+              requireAuth: true,
+              builder: (context, params) => WebScheduleScreenWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ).toRoute(appStateNotifier),

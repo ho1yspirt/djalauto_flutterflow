@@ -3,6 +3,7 @@ import '../components/question_without_image_card_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
@@ -102,7 +103,7 @@ class _SingleQuestionPageWidgetState extends State<SingleQuestionPageWidget> {
                   final singleOptionDataItem =
                       singleOptionData[singleOptionDataIndex];
                   return OptionButtonWidget(
-                    key: UniqueKey(),
+                    key: Key('optionButton_${singleOptionDataIndex}'),
                     optionText: valueOrDefault<String>(
                       getJsonField(
                         singleOptionDataItem,

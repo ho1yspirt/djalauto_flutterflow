@@ -1,4 +1,4 @@
-package com.ho1yspirt.djalauto
+package com.djalauto.djalauto
 
 import io.flutter.embedding.android.FlutterActivity
 
