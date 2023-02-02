@@ -54,7 +54,7 @@ class _TeacherCardWidgetState extends State<TeacherCardWidget> {
             Image.network(
               widget.image!,
               width: double.infinity,
-              height: 180,
+              height: 280,
               fit: BoxFit.cover,
             ),
             Padding(
@@ -71,7 +71,7 @@ class _TeacherCardWidgetState extends State<TeacherCardWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      '0v5xuq7u' /* Profession:  */,
+                      'xqchvvs8' /* Profession:  */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyText1,
                   ),
@@ -89,7 +89,7 @@ class _TeacherCardWidgetState extends State<TeacherCardWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      '0ri0yqle' /* Experience: */,
+                      'dewzcztt' /* Experience: */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyText1,
                   ),
@@ -107,7 +107,7 @@ class _TeacherCardWidgetState extends State<TeacherCardWidget> {
                 children: [
                   Text(
                     FFLocalizations.of(context).getText(
-                      'cibkjyeu' /* Age:  */,
+                      'bjidwdl6' /* Age:  */,
                     ),
                     style: FlutterFlowTheme.of(context).bodyText1,
                   ),

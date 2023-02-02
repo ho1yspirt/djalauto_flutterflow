@@ -73,12 +73,12 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'piwd2zq7': {
       'en': 'Log In your Account',
-      'ky': 'Каттоо эсебиңизге кириңиз',
+      'ky': '',
       'ru': 'Войдите в свою учетную запись',
     },
     'wbpwdl5d': {
       'en': 'Log into your school account by phone verification',
-      'ky': 'Телефондук текшерүү аркылуу мектеп эсебиңизге кириңиз',
+      'ky': '',
       'ru': 'Войдите в свою школьную учетную запись, подтвердив телефон',
     },
     '5vo9yod9': {
@@ -108,17 +108,17 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7gsn9gty': {
       'en': 'Send Code',
-      'ky': 'Кодду жөнөтүү',
+      'ky': '',
       'ru': 'Отправить код',
     },
     '8r4544x5': {
       'en': 'Continue as Guest',
-      'ky': 'Конок катары улантуу',
+      'ky': '',
       'ru': 'Продолжить как гость',
     },
     '39gjiqja': {
       'en': 'Home',
-      'ky': 'Үй',
+      'ky': '',
       'ru': 'Дом',
     },
   },
@@ -131,23 +131,22 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '7pqlgorn': {
       'en': 'Confirm your Code',
-      'ky': 'Кодуңузду ырастаңыз',
+      'ky': '',
       'ru': 'Подтвердите свой код',
     },
     '8bhl4np4': {
       'en': 'This code helps keep your account safe and secure.',
-      'ky':
-          'Бул код каттоо эсебиңизди коопсуз жана коопсуз сактоого жардам берет.',
+      'ky': '',
       'ru': 'Этот код помогает сохранить вашу учетную запись в безопасности.',
     },
     'le3xxirb': {
       'en': 'Confirm & Continue',
-      'ky': 'Ырастоо & Улантуу',
+      'ky': '',
       'ru': 'Подтвердить и продолжить',
     },
     '1jamw8w0': {
       'en': 'Home',
-      'ky': 'Үй',
+      'ky': '',
       'ru': 'Дом',
     },
   },
@@ -155,81 +154,101 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'si02gcny': {
       'en': 'Schedule',
-      'ky': 'График',
+      'ky': '',
       'ru': 'Расписание',
+    },
+    '9fbn1ae3': {
+      'en': 'Add lesson',
+      'ky': '',
+      'ru': 'Записаться',
     },
     'nby1ehs7': {
       'en': 'Schedule',
-      'ky': 'График',
+      'ky': '',
       'ru': 'Расписание',
     },
   },
   // papers_screen
   {
     'jq724syr': {
-      'en': 'Page Title',
-      'ky': 'Барактын аталышы',
-      'ru': 'Заголовок страницы',
+      'en': 'Papers',
+      'ky': '',
+      'ru': 'Билеты',
     },
     'o015yp1e': {
       'en': 'Pass the exam',
-      'ky': 'Экзаменден өт',
+      'ky': '',
       'ru': 'Сдать экзамен',
     },
-    'oc9mwrrp': {
+    'u9xvb75t': {
       'en': 'Choose exam paper',
-      'ky': 'Экзамен кагазын тандаңыз',
-      'ru': 'Выбрать экзаменационную работу',
+      'ky': '',
+      'ru': 'Выбрать билет',
     },
-    'ynmb8cg7': {
+    'laktg27m': {
       'en': 'Category ABM',
-      'ky': 'ABM категориясы',
-      'ru': 'Категория ПРО',
+      'ky': '',
+      'ru': 'Категория ABM',
     },
     'qjpkil86': {
       'en': 'Papers',
-      'ky': 'Кагаздар',
-      'ru': 'Документы',
+      'ky': '',
+      'ru': 'Билеты',
     },
   },
   // account_screen
   {
     'htg3eled': {
       'en': 'Account',
-      'ky': 'Каттоо эсеби',
-      'ru': 'Счет',
+      'ky': '',
+      'ru': 'Аккаунт',
+    },
+    '6290rj1d': {
+      'en': 'English',
+      'ky': '',
+      'ru': 'Англ',
+    },
+    '3qgi2646': {
+      'en': 'Kyrgyz',
+      'ky': '',
+      'ru': 'Кырг',
+    },
+    'uoy1oier': {
+      'en': 'Russian',
+      'ky': '',
+      'ru': 'Рус',
     },
     'syxhxanr': {
       'en': 'Account',
-      'ky': 'Каттоо эсеби',
-      'ru': 'Счет',
+      'ky': '',
+      'ru': 'Аккаунт',
     },
   },
   // single_paper_screen
   {
     'iiw1f6ry': {
       'en': 'Back',
-      'ky': 'Артка',
+      'ky': '',
       'ru': 'Назад',
     },
     '84vipzch': {
       'en': 'Papers#',
-      'ky': 'Кагаздар#',
-      'ru': 'Документы#',
+      'ky': '',
+      'ru': 'Билет#',
     },
     'qcs5az7c': {
       'en': 'Question #',
-      'ky': 'Суроо №',
+      'ky': '',
       'ru': 'Вопрос #',
     },
     'qeekqouk': {
       'en': 'Next Question',
-      'ky': 'Кийинки суроо',
-      'ru': 'Следующий вопрос',
+      'ky': '',
+      'ru': 'След вопрос',
     },
     'quqxja46': {
       'en': 'Home',
-      'ky': 'Үй',
+      'ky': '',
       'ru': 'Дом',
     },
   },
@@ -238,270 +257,344 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     'zsdp03nv': {
       'en': '+996 500 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 500 353 541',
     },
     'hpqw8ed5': {
       'en': '+996 557 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 557 353 541',
     },
     'j2rlf1p3': {
       'en': 'Mn-St 9:00 am - 8:00 pm',
       'ky': '',
-      'ru': '',
+      'ru': 'Пн-Сб 9:00 - 20:00',
     },
     '62ze0wkc': {
       'en': 'Login',
       'ky': '',
-      'ru': '',
+      'ru': 'Аккаунт',
     },
     's41blwlp': {
       'en': 'Exam Papers',
       'ky': '',
-      'ru': '',
+      'ru': 'Билеты',
     },
     '9ecdlvu2': {
       'en': 'Pass the exam',
       'ky': '',
-      'ru': '',
+      'ru': 'Сдать экзамен',
     },
     'ofud6sv2': {
       'en': 'Pass the exam',
       'ky': '',
-      'ru': '',
+      'ru': 'Сдать экзамен',
     },
     '1eijth44': {
       'en': 'Auto school Djal Auto',
       'ky': '',
-      'ru': '',
+      'ru': 'Автошкола Джал Авто',
     },
     'hna0q270': {
       'en': 'The driving school trains drivers in category B',
       'ky': '',
-      'ru': '',
+      'ru': 'Автошкола проводит подготовку водителей по категории B',
     },
     '8zj07jc8': {
       'en': 'Call',
       'ky': '',
-      'ru': '',
+      'ru': 'Позвонить',
     },
     'jg87nku0': {
       'en': 'Auto school Djal Auto',
       'ky': '',
-      'ru': '',
+      'ru': 'Автошкола Джал Авто',
     },
     'ku0m22yc': {
       'en': 'Sign up for a driving practice by logging into your account',
       'ky': '',
-      'ru': '',
+      'ru': 'Войдите в свой аккаунт чтобы запсаться на практический урок',
     },
     'l9jdfzac': {
       'en': 'Login',
       'ky': '',
-      'ru': '',
+      'ru': 'Аккаунт',
     },
     '77mk0w4u': {
       'en': 'Auto school  Djal Auto',
       'ky': '',
-      'ru': '',
+      'ru': 'Автошкола Джал Авто',
     },
     '9gv02uj6': {
       'en':
           'In-depth knowledge and training of future drivers for safe driving',
       'ky': '',
-      'ru': '',
+      'ru': 'Глубокие знания и обучение будущих водителей безопасному вождению',
     },
     '4kzithgv': {
       'en':
           'Djal Auto Driving School - has teachers with higher education in the field of organization and road safety; These are driving instructors with many years of experience who continue to improve their professional skills in special courses.',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Школа Джал Авто - это преподаватели с высшим образованием в области организации и безопасности дорожного движения; это автоинструкторы с многолетним опытом, которые продолжают совершенствовать профессиональные навыки на специальных курсах.',
     },
     'll8svxp1': {
       'en': 'Equipped classrooms',
       'ky': '',
-      'ru': '',
+      'ru': 'Оборудованные классы',
     },
     'njsgpc79': {
       'en':
           'The classrooms are equipped with teaching aids, computer and video equipment.',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Учебные классы оборудованы учебными пособиями, компьютерной и видеотехникой.',
     },
     '1fn8zdma': {
       'en': 'State standard',
       'ky': '',
-      'ru': '',
+      'ru': 'Государственный стандарт',
     },
     'whmq8nhg': {
       'en':
           'The classrooms are equipped with teaching aids, computer and video equipment.',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Обучение проходит по государственному стандарту  Кыргызской Республики.',
     },
     '5ceypaex': {
       'en': 'Own auto fleet',
       'ky': '',
-      'ru': '',
+      'ru': 'Свой автопарк',
     },
     '6vimdjsl': {
       'en': 'Practical driving lessons in cars from the school\'s fleet.',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Практические занятие вождения проводиться на машинах их автопарка школы.',
     },
     'zeb22bbx': {
       'en': 'Education',
       'ky': '',
-      'ru': '',
+      'ru': 'Обучение',
     },
     'tribeop5': {
       'en': 'B',
       'ky': '',
-      'ru': '',
+      'ru': 'Б',
     },
     'un989qi6': {
       'en': 'Information about education:',
       'ky': '',
-      'ru': '',
+      'ru': 'Информация об обучении:',
     },
     'g0bnv290': {
       'en': '8000 soms',
       'ky': '',
-      'ru': '',
+      'ru': '8000 сом',
     },
     '5mxybp6f': {
       'en':
           '- From 17 years old\n- Training period - 10 weeks\n- Lesson (manual) 300 soms\n- Lesson (auto) 350 soms',
       'ky': '',
-      'ru': '',
+      'ru':
+          '- Обучение с 17 лет\n- Срок обучения - 10 недель\n- Занятие (механика) 300 сом\n- Занятие (автомат) 350 сом',
     },
     'cj6uopum': {
       'en': 'Our Teachers',
       'ky': '',
-      'ru': '',
+      'ru': 'Наши преподаватели',
     },
     'kszjzapb': {
       'en': 'Auto fleet',
       'ky': '',
-      'ru': '',
+      'ru': 'Автопарк',
     },
-    'fayn6fk6': {
+    'ncf4ys6n': {
       'en': 'Installment education',
       'ky': '',
-      'ru': '',
+      'ru': 'Обучение с возможностью рассрочки',
     },
-    'duxuvykt': {
+    'pkfqp0x0': {
       'en':
           'Training guarantee. \nFull accompaniment \nuntil  you get your \ndriver\'s license',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Гарантия на обучения. \nПолное сопровождение до \nтех пор, пока вы не получите \nводительское удостоверение',
     },
-    'rlzjsfar': {
+    'zqcyfdhq': {
       'en':
           'We will teach you to feel\n confident behind the wheel. \nTeach you how to drive with \nconfidence',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Научим вас уверенно чувствовать \nсебя за рулем. Научим вас \nуверенно чувствовать себя за \nрулем',
     },
-    '4khmy023': {
+    'nxfby8mv': {
       'en': 'Call and sign up',
       'ky': '',
-      'ru': '',
+      'ru': 'Позвонить и записаться',
     },
-    '42m1qrda': {
+    'eay3fysw': {
       'en':
           'Call, discuss all the conditions \nand ask questions about training',
       'ky': '',
-      'ru': '',
+      'ru':
+          'Позвоните, обговорите все условия\nи задайте вопросы насчет обучения',
     },
-    '34xnutbs': {
+    't3ql6xcm': {
       'en': '+996 500 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 500 353 541',
     },
-    '7rteuw5o': {
+    'ip0vwqzd': {
       'en': '+996 557 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 557 353 541',
     },
-    '875ahrgi': {
+    'ljh11oa5': {
       'en': 'Call',
       'ky': '',
-      'ru': '',
+      'ru': 'Позвонить',
     },
     'i2xuwfgr': {
       'en': 'License',
       'ky': '',
-      'ru': '',
+      'ru': 'Лицензия',
     },
     'cpmpqutq': {
       'en': 'Contact Information',
       'ky': '',
-      'ru': '',
+      'ru': 'Контактная информация',
     },
-    'pbzebq5a': {
-      'en': 'Bishkek, Nizhny Jal\\nIsy\nAkhunbaeva 200',
+    'd49osh45': {
+      'en': 'Bishkek, Nizhny Jal\nIsy Akhunbaeva 200',
       'ky': '',
-      'ru': '',
+      'ru': 'Бишкек, Нижний Джал \nИса Ахунбаева 200',
     },
-    'w01jrcim': {
+    'jki6line': {
       'en': '+996 500 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 500 353 541',
     },
-    'qv5gu0u8': {
+    'uiooxgrg': {
       'en': '+996 557 353 541',
       'ky': '',
-      'ru': '',
+      'ru': '+996 557 353 541',
     },
-    '1fma3ahg': {
-      'en': 'Button',
+    'xd93z1rf': {
+      'en': 'About us',
       'ky': '',
-      'ru': '',
+      'ru': 'О нас',
     },
-    'rzoq03ma': {
-      'en': 'Button',
+    'k43ap3uw': {
+      'en': 'Exam papers',
       'ky': '',
-      'ru': '',
+      'ru': 'Билеты',
     },
-    'ixc47h5t': {
-      'en': 'Button',
+    '31bn5z84': {
+      'en': 'Exam',
       'ky': '',
-      'ru': '',
+      'ru': 'Экзамен',
     },
-    '38sk2pwi': {
-      'en': 'Hello World',
+    'qvjgkqf3': {
+      'en': 'Schedule',
       'ky': '',
-      'ru': '',
+      'ru': 'Расписание',
     },
-    '2xum342j': {
+    'bmlqnbnh': {
+      'en': 'Contact us in a convenient way for you',
+      'ky': '',
+      'ru': 'Свяжитесь с нами удобным вам способом',
+    },
+    'kbh3etjq': {
       'en': 'Call',
       'ky': '',
-      'ru': '',
+      'ru': 'Позвонить',
     },
-    've7s55cu': {
+    'itkdwbfg': {
       'en': 'Whatsapp',
       'ky': '',
-      'ru': '',
+      'ru': 'Whatsapp',
     },
-    'n2oor4gm': {
+    'ttezl4no': {
       'en': 'Instagram',
       'ky': '',
-      'ru': '',
+      'ru': 'Instagram',
     },
-    'p0977xhx': {
+    'acmi0xya': {
       'en': '© 2023 Джал Авто',
       'ky': '',
-      'ru': '',
+      'ru': '© 2023 Джал Авто',
     },
     'no5gy9yq': {
       'en': 'Home',
       'ky': '',
-      'ru': '',
+      'ru': 'Home',
     },
   },
-  // web_schedule_screen
+  // exam_screen
   {
-    'gjre5ym5': {
+    'hyi2lp4c': {
+      'en': 'Back',
+      'ky': '',
+      'ru': 'Назад',
+    },
+    '4xe4muno': {
+      'en': 'Page Title',
+      'ky': '',
+      'ru': 'Page Title',
+    },
+    'vh7rkd0k': {
+      'en': 'Home',
+      'ky': '',
+      'ru': 'Home',
+    },
+  },
+  // add_lesson_screen
+  {
+    'gc9qebz8': {
+      'en': 'Back',
+      'ky': '',
+      'ru': 'Назад',
+    },
+    '2pr969e4': {
+      'en': 'Create',
+      'ky': '',
+      'ru': 'Записаться',
+    },
+    'l5gtkid1': {
+      'en': 'Add lesson',
+      'ky': '',
+      'ru': 'Записаться',
+    },
+    'txyi7dnt': {
+      'en': 'Select time',
+      'ky': '',
+      'ru': 'Выбрать время',
+    },
+    'eoz6m9pa': {
+      'en': 'Description',
+      'ky': '',
+      'ru': 'Дополнительно',
+    },
+    'emrglunx': {
+      'en': 'Additional information',
+      'ky': '',
+      'ru': 'При необходимости напишите доп. информацию',
+    },
+    'c2ln2407': {
+      'en': 'Home',
+      'ky': '',
+      'ru': 'Home',
+    },
+  },
+  // lesson_screen
+  {
+    'utqt68p1': {
+      'en': 'Back',
+      'ky': '',
+      'ru': 'Назад',
+    },
+    '10c9uqqs': {
       'en': 'Home',
       'ky': '',
       'ru': '',
@@ -511,15 +604,15 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     'nywmk25e': {
       'en': 'Pick Random',
-      'ky': 'Random тандоо',
-      'ru': 'Выбрать случайным образом',
+      'ky': '',
+      'ru': 'Выбрать случайный',
     },
   },
   // questionWithoutImageCard
   {
     'dooi43o9': {
       'en': 'This question without an image',
-      'ky': 'Сүрөтсүз бул суроо',
+      'ky': '',
       'ru': 'Этот вопрос без изображения',
     },
   },
@@ -527,36 +620,74 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   {
     '172b21uj': {
       'en': 'Have an Account?',
-      'ky': 'Каттоо эсебиңиз барбы?',
-      'ru': 'Иметь аккаунт?',
+      'ky': '',
+      'ru': 'Уже есть аккаунт?',
     },
     'nzhkn70s': {
       'en': 'Log into your school account by phone verification.',
-      'ky': 'Телефондук текшерүү аркылуу мектеп эсебиңизге кириңиз.',
-      'ru': 'Войдите в свою школьную учетную запись, подтвердив телефон.',
+      'ky': '',
+      'ru': 'Войти в свой Аккаунт с помощью верификации номера.',
     },
     'vvlu3jzh': {
       'en': 'Login',
-      'ky': 'Кирүү',
-      'ru': 'Авторизоваться',
+      'ky': '',
+      'ru': 'Войти',
     },
   },
   // teacherCard
   {
-    '0v5xuq7u': {
+    'xqchvvs8': {
       'en': 'Profession: ',
       'ky': '',
-      'ru': '',
+      'ru': 'Профессия: ',
     },
-    '0ri0yqle': {
+    'dewzcztt': {
       'en': 'Experience:',
       'ky': '',
-      'ru': '',
+      'ru': 'Стаж:',
     },
-    'cibkjyeu': {
+    'bjidwdl6': {
       'en': 'Age: ',
       'ky': '',
-      'ru': '',
+      'ru': 'Возраст:',
+    },
+  },
+  // webSideNavBar
+  {
+    '5empl6n0': {
+      'en': 'Home page',
+      'ky': '',
+      'ru': 'Главная',
+    },
+    '3ms32jlv': {
+      'en': 'Schedule',
+      'ky': '',
+      'ru': 'Расписание',
+    },
+    'dhoxwfwx': {
+      'en': 'Exam Papers',
+      'ky': '',
+      'ru': 'Билеты',
+    },
+    '745jo0lr': {
+      'en': 'Exam',
+      'ky': '',
+      'ru': 'Экзамен',
+    },
+    'wesf3jii': {
+      'en': 'Add lesson',
+      'ky': '',
+      'ru': 'Записаться',
+    },
+    'opusnjoz': {
+      'en': 'Account',
+      'ky': '',
+      'ru': 'Аккаунт',
+    },
+    'zjiiqp1c': {
+      'en': 'Exit',
+      'ky': '',
+      'ru': 'Выйти',
     },
   },
   // Miscellaneous

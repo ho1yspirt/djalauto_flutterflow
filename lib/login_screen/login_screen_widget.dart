@@ -1,4 +1,5 @@
 import '../auth/auth_util.dart';
+import '../backend/api_requests/api_calls.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -17,6 +18,7 @@ class LoginScreenWidget extends StatefulWidget {
 }
 
 class _LoginScreenWidgetState extends State<LoginScreenWidget> {
+  ApiCallResponse? apiResultIsExist;
   TextEditingController? codeInputController;
   final codeInputMask = MaskTextInputFormatter(mask: '+###');
   TextEditingController? phoneInputController;
@@ -208,6 +210,8 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                                         FFLocalizations.of(context).getText(
                                       'wjb728eu' /* 000 000 000 */,
                                     ),
+                                    hintStyle:
+                                        FlutterFlowTheme.of(context).subtitle1,
                                     enabledBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
                                         color: FlutterFlowTheme.of(context)
@@ -317,33 +321,65 @@ class _LoginScreenWidgetState extends State<LoginScreenWidget> {
                             },
                             child: FFButtonWidget(
                               onPressed: () async {
-                                final phoneNumberVal =
-                                    (String codeNum, String phoneNum) {
-                                  return "$codeNum$phoneNum";
-                                }(codeInputController!.text,
-                                        phoneInputController!.text);
-                                if (phoneNumberVal == null ||
-                                    phoneNumberVal.isEmpty ||
-                                    !phoneNumberVal.startsWith('+')) {
+                                apiResultIsExist =
+                                    await GetUserByPhoneCall.call(
+                                  userPhone:
+                                      (String phoneNumber, String phoneCode) {
+                                    return '$phoneCode$phoneNumber';
+                                  }(
+                                          phoneInputController!.text,
+                                          ((String phoneCodeTemp) {
+                                            return phoneCodeTemp.replaceAll(
+                                                new RegExp(r'+'), '');
+                                          }(codeInputController!.text))),
+                                );
+                                if ((apiResultIsExist?.succeeded ?? true)) {
+                                  final phoneNumberVal =
+                                      (String codeNum, String phoneNum) {
+                                    return "$codeNum$phoneNum";
+                                  }(codeInputController!.text,
+                                          phoneInputController!.text);
+                                  if (phoneNumberVal == null ||
+                                      phoneNumberVal.isEmpty ||
+                                      !phoneNumberVal.startsWith('+')) {
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(
+                                        content: Text(
+                                            'Phone Number is required and has to start with +.'),
+                                      ),
+                                    );
+                                    return;
+                                  }
+                                  await beginPhoneAuth(
+                                    context: context,
+                                    phoneNumber: phoneNumberVal,
+                                    onCodeSent: () async {
+                                      context.goNamedAuth(
+                                        'sms_auth_screen',
+                                        mounted,
+                                        ignoreRedirect: true,
+                                      );
+                                    },
+                                  );
+                                } else {
+                                  ScaffoldMessenger.of(context)
+                                      .clearSnackBars();
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     SnackBar(
                                       content: Text(
-                                          'Phone Number is required and has to start with +.'),
+                                        'Ваш номер не зарегистрирован',
+                                        style:
+                                            FlutterFlowTheme.of(context).title3,
+                                      ),
+                                      duration: Duration(milliseconds: 4000),
+                                      backgroundColor:
+                                          FlutterFlowTheme.of(context)
+                                              .primaryColor,
                                     ),
                                   );
-                                  return;
                                 }
-                                await beginPhoneAuth(
-                                  context: context,
-                                  phoneNumber: phoneNumberVal,
-                                  onCodeSent: () async {
-                                    context.goNamedAuth(
-                                      'sms_auth_screen',
-                                      mounted,
-                                      ignoreRedirect: true,
-                                    );
-                                  },
-                                );
+
+                                setState(() {});
                               },
                               text: FFLocalizations.of(context).getText(
                                 '7gsn9gty' /* Send Code */,

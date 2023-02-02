@@ -34,8 +34,8 @@ class _CarCardWidgetState extends State<CarCardWidget> {
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Container(
-        width: 200,
-        height: 250,
+        width: 250,
+        height: 400,
         decoration: BoxDecoration(
           color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: BorderRadius.circular(20),
@@ -47,7 +47,7 @@ class _CarCardWidgetState extends State<CarCardWidget> {
             Image.network(
               widget.image!,
               width: MediaQuery.of(context).size.width,
-              height: 200,
+              height: 350,
               fit: BoxFit.cover,
             ),
             Padding(

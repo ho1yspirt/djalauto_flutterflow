@@ -121,7 +121,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'single_paper_screen',
               path: 'singlePaperScreen',
-              requireAuth: true,
               builder: (context, params) => SinglePaperScreenWidget(
                 paperData: params.getParam('paperData', ParamType.JSON),
                 currentQuestionIndex:
@@ -134,10 +133,39 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => WebHomeScreenWidget(),
             ),
             FFRoute(
-              name: 'web_schedule_screen',
-              path: 'webScheduleScreen',
+              name: 'exam_screen',
+              path: 'examScreen',
+              builder: (context, params) => ExamScreenWidget(),
+            ),
+            FFRoute(
+              name: 'add_lesson_screen',
+              path: 'addLessonScreen',
               requireAuth: true,
-              builder: (context, params) => WebScheduleScreenWidget(),
+              builder: (context, params) => AddLessonScreenWidget(
+                teacher: params.getParam('teacher', ParamType.DocumentReference,
+                    false, ['teachers']),
+                teacherName: params.getParam('teacherName', ParamType.String),
+                userName: params.getParam('userName', ParamType.String),
+                user: params.getParam(
+                    'user', ParamType.DocumentReference, false, ['users']),
+              ),
+            ),
+            FFRoute(
+              name: 'lesson_screen',
+              path: 'lessonScreen',
+              requireAuth: true,
+              builder: (context, params) => LessonScreenWidget(
+                userName: params.getParam('userName', ParamType.String),
+                teacherName: params.getParam('teacherName', ParamType.String),
+                start: params.getParam('start', ParamType.DateTime),
+                end: params.getParam('end', ParamType.DateTime),
+                desc: params.getParam('desc', ParamType.String),
+                created: params.getParam('created', ParamType.DateTime),
+                user: params.getParam(
+                    'user', ParamType.DocumentReference, false, ['users']),
+                teacher: params.getParam('teacher', ParamType.DocumentReference,
+                    false, ['teachers']),
+              ),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ).toRoute(appStateNotifier),

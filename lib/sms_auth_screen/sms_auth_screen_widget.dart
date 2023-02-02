@@ -45,39 +45,45 @@ class _SmsAuthScreenWidgetState extends State<SmsAuthScreenWidget> {
         child: Scaffold(
           key: scaffoldKey,
           backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-          appBar: AppBar(
-            backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-            automaticallyImplyLeading: false,
-            leading: FlutterFlowIconButton(
-              borderColor: Colors.transparent,
-              borderRadius: 30,
-              borderWidth: 1,
-              buttonSize: 60,
-              icon: Icon(
-                Icons.arrow_back_outlined,
-                color: Colors.white,
-                size: 30,
-              ),
-              onPressed: () async {
-                context.pushNamed('login_screen');
-              },
-            ),
-            title: Text(
-              FFLocalizations.of(context).getText(
-                'n5ei50en' /* SMS Auth */,
-              ),
-              style: FlutterFlowTheme.of(context).title2.override(
-                    fontFamily: FlutterFlowTheme.of(context).title2Family,
-                    color: Colors.white,
-                    fontSize: 22,
-                    useGoogleFonts: GoogleFonts.asMap()
-                        .containsKey(FlutterFlowTheme.of(context).title2Family),
+          appBar: responsiveVisibility(
+            context: context,
+            desktop: false,
+          )
+              ? AppBar(
+                  backgroundColor:
+                      FlutterFlowTheme.of(context).primaryBackground,
+                  automaticallyImplyLeading: false,
+                  leading: FlutterFlowIconButton(
+                    borderColor: Colors.transparent,
+                    borderRadius: 30,
+                    borderWidth: 1,
+                    buttonSize: 60,
+                    icon: Icon(
+                      Icons.arrow_back_outlined,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                    onPressed: () async {
+                      context.pushNamed('login_screen');
+                    },
                   ),
-            ),
-            actions: [],
-            centerTitle: true,
-            elevation: 0,
-          ),
+                  title: Text(
+                    FFLocalizations.of(context).getText(
+                      'n5ei50en' /* SMS Auth */,
+                    ),
+                    style: FlutterFlowTheme.of(context).title2.override(
+                          fontFamily: FlutterFlowTheme.of(context).title2Family,
+                          color: Colors.white,
+                          fontSize: 22,
+                          useGoogleFonts: GoogleFonts.asMap().containsKey(
+                              FlutterFlowTheme.of(context).title2Family),
+                        ),
+                  ),
+                  actions: [],
+                  centerTitle: true,
+                  elevation: 0,
+                )
+              : null,
           body: GestureDetector(
             onTap: () => FocusScope.of(context).requestFocus(_unfocusNode),
             child: Row(

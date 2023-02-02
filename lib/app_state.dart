@@ -138,6 +138,12 @@ class FFAppState extends ChangeNotifier {
     prefs.setStringList(
         'ff_carList', _carList.map((x) => jsonEncode(x)).toList());
   }
+
+  DateTime? _selectedDate;
+  DateTime? get selectedDate => _selectedDate;
+  set selectedDate(DateTime? _value) {
+    _selectedDate = _value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {

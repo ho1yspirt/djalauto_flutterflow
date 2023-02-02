@@ -58,17 +58,16 @@ class PapersFirebaseRealtimeDBCall {
       );
 }
 
-class ListdemodemoCall {
-  static Future<ApiCallResponse> call() {
+class GetUserByPhoneCall {
+  static Future<ApiCallResponse> call({
+    String? userPhone = '',
+  }) {
     return ApiManager.instance.makeApiCall(
-      callName: 'listdemodemo',
-      apiUrl: 'https://efront.devtest.xyz/api/product/list/',
+      callName: 'getUserByPhone',
+      apiUrl:
+          'https://firestore.googleapis.com/v1/projects/djal-auto-be4ed/databases/(default)/documents/users/%2B${userPhone}',
       callType: ApiCallType.GET,
-      headers: {
-        'Authorization':
-            'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjc0MjE0NzU1LCJpYXQiOjE2NzQyMTI5NTUsImp0aSI6IjBlOGY1OTNiY2Y1ZTQ2YTE5OGRjOTQ1NTM4YTY1MGU4IiwidXNlcl9pZCI6MywiZW1haWwiOiJiQGdtYWlsLmNvbSJ9.NjGXUWTgM1-vSF8CqcJ7NeiYgdMSpfY4KqUPMPJDs3A',
-        'content-type': 'application/json; charset=utf-8',
-      },
+      headers: {},
       params: {},
       returnBody: true,
       encodeBodyUtf8: false,
@@ -76,6 +75,11 @@ class ListdemodemoCall {
       cache: false,
     );
   }
+
+  static dynamic root(dynamic response) => getJsonField(
+        response,
+        r'''$''',
+      );
 }
 
 class ApiPagingParams {
